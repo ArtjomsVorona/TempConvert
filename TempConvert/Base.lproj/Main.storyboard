@@ -39,6 +39,9 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="A7S-UF-tKx">
                                 <rect key="frame" x="65" y="396" width="284" height="31"/>
+                                <connections>
+                                    <action selector="tempSliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="1UZ-To-8bw"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -58,7 +61,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="TempConvert" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="rn0-0d-Rgh"/>
+                    <navigationItem key="navigationItem" title="TempConvert" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="rn0-0d-Rgh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="4YQ-UO-o2v"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="celsiusLabel" destination="Dvs-aI-MHO" id="udt-LU-Lhd"/>
+                        <outlet property="fahrenheitLabel" destination="hMo-pI-CF9" id="Bbb-cj-nN1"/>
+                        <outlet property="tempSlider" destination="A7S-UF-tKx" id="SAU-Na-aeH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
