@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wH9-L1-W5f">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -41,7 +41,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="-50" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="A7S-UF-tKx">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="-50" maxValue="50" minimumValueImage="sun.min.fill" catalog="system" maximumValueImage="sun.max.fill" translatesAutoresizingMaskIntoConstraints="NO" id="A7S-UF-tKx">
                                 <rect key="frame" x="65" y="396" width="284" height="31"/>
                                 <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -67,7 +67,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="TempConvert" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="rn0-0d-Rgh">
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="4YQ-UO-o2v"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="4YQ-UO-o2v">
+                            <connections>
+                                <action selector="actionBarButtonTapped:" destination="BYZ-38-t0r" id="1bb-cs-TMx"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="celsiusLabel" destination="Dvs-aI-MHO" id="udt-LU-Lhd"/>
@@ -100,5 +104,7 @@
     </scenes>
     <resources>
         <image name="City-day" width="1024" height="1280"/>
+        <image name="sun.max.fill" catalog="system" width="64" height="62"/>
+        <image name="sun.min.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>
