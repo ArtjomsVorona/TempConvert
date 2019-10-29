@@ -2,17 +2,19 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "City-day-1.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "scale" : "1x",
+      "filename" : "nyc-night.jpg",
       "appearances" : [
         {
           "appearance" : "luminosity",
           "value" : "dark"
         }
-      ]
+      ],
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

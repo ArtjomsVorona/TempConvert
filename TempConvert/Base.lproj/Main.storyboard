@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="City-day" translatesAutoresizingMaskIntoConstraints="NO" id="NG0-WQ-88k">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="City" translatesAutoresizingMaskIntoConstraints="NO" id="NG0-WQ-88k">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -103,7 +103,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="City-day" width="1024" height="1280"/>
+        <image name="City" width="1024" height="1280"/>
         <image name="sun.max.fill" catalog="system" width="64" height="62"/>
         <image name="sun.min.fill" catalog="system" width="64" height="60"/>
     </resources>
